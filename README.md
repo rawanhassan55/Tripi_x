@@ -1,6 +1,7 @@
 # tripi_x
 
-A new Flutter project.
+A Flutter project.
+Our graduation project.
 
 ## Getting Started
 
