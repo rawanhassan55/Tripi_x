@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:tripi_x/views/welcome_view/first_view.dart';
+import 'package:tripi_x/splash_view.dart';
+import 'package:tripi_x/styles/themes.dart';
+// import 'package:tripi_x/views/welcome_view/first_view.dart';
 
 void main() {
-  runApp(const Tripix());
+  runApp(Tripix());
 }
 
 class Tripix extends StatelessWidget {
@@ -10,9 +12,12 @@ class Tripix extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: AppThemes.lightTheme,
+      darkTheme: AppThemes.darkTheme,
+      themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
-      home: FirstPage(),
+      home: SplashView(),
     );
   }
 }

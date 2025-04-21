@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:tripi_x/styles/colors.dart';
 import 'package:tripi_x/views/welcome_view/welcome_view.dart';
 
-class FirstPage extends StatelessWidget {
-  const FirstPage({super.key});
+class FirstView extends StatelessWidget {
+  const FirstView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +32,7 @@ class FirstPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 15),
                 const Text(
-                  'Your journey starts here',
+                  'Your travel companion',
                   style: TextStyle(fontSize: 25, color: Colors.white70),
                 ),
                 const SizedBox(height: 60),
@@ -45,7 +46,7 @@ class FirstPage extends StatelessWidget {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.black,
+                    backgroundColor: AppColors.primary,
                     padding: const EdgeInsets.symmetric(
                       horizontal: 25,
                       vertical: 12,

@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   // Core Seed
-  static const Color primary = Color(0xFF008080); // Teal
-  static const Color secondary = Color(0xFF4DB6AC); // Lighter teal
-  static const Color accent = Color(0xFF80CBC4); // Soft accent
+  static const Color primary = Color(0xFF001F3F); // Teal
+  static const Color secondary = Color(0xFF0A192F); // Lighter teal
+  static const Color accent = Color(0xFF1E88E5); // Soft accent
+  static const Color blueLight = Color(0xFFBBDEFB);
 
   // Light Theme
   static const Color lightBackground = Color(0xFFF5F5F5);
