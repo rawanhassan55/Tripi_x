@@ -1,26 +1,25 @@
 import 'package:flutter/material.dart';
 
 class ChooseButton extends StatelessWidget {
-  const ChooseButton({super.key, required this.text});
+  const ChooseButton({super.key, required this.text, this.onPressed});
   final String text;
+  final VoidCallback? onPressed;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15),
-        color: Colors.black,
-      ),
-      width: 170,
+    return MaterialButton(
+      minWidth: 180,
       height: 50,
-      child: MaterialButton(
-        onPressed: () {},
-        child: Text(
-          text,
-          style: TextStyle(
-            fontSize: 25,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+      color: Colors.black,
+      onPressed: () {
+        onPressed?.call();
+      },
+      child: Text(
+        text,
+        style: TextStyle(
+          fontSize: 25,
+          fontWeight: FontWeight.bold,
+          color: Colors.white,
         ),
       ),
     );
