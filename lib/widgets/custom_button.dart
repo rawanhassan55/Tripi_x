@@ -9,7 +9,7 @@ class ChooseButton extends StatelessWidget {
     return MaterialButton(
       minWidth: 180,
       height: 45,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
       color: Theme.of(context).colorScheme.primary,
       onPressed: () {
         onPressed?.call();

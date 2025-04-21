@@ -23,7 +23,7 @@ class _SplashViewState extends State<SplashView>
       vsync: this,
     );
 
-    _animation = CurvedAnimation(parent: _controller, curve: Curves.easeInOut);
+    _animation = CurvedAnimation(parent: _controller, curve: Curves.elasticOut);
     _controller.forward();
 
     Timer(const Duration(seconds: 3), () {

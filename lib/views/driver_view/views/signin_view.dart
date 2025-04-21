@@ -19,7 +19,7 @@ class SigninView extends StatelessWidget {
             hintText: "Enter Email Address",
             labelText: "Email Address",
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 18),
           CustomTextField(
             hintText: "Enter password",
             labelText: "Password",
