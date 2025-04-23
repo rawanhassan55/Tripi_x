@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tripi_x/splash_view.dart';
+//import 'package:tripi_x/splash_view.dart';
 import 'package:tripi_x/styles/themes.dart';
+import 'package:tripi_x/views/passenger_view/views/login_view.dart';
 // import 'package:tripi_x/views/welcome_view/first_view.dart';
 
 void main() {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tripi_x/views/driver_view/views/signin_view.dart';
+import 'package:tripi_x/views/passenger_view/views/login_view.dart';
 import 'package:tripi_x/widgets/custom_button.dart';
 
 class ChooseOptionScreen extends StatelessWidget {
@@ -29,7 +30,15 @@ class ChooseOptionScreen extends StatelessWidget {
           },
         ),
         const SizedBox(height: 25),
-        ChooseButton(text: 'Passenger'),
+        ChooseButton(text: 'Passenger',
+        onPressed: () {
+           Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => LoginView() ),
+            );
+        },
+        ),
+
       ],
     );
   }
