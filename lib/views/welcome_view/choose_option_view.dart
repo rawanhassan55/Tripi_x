@@ -20,6 +20,7 @@ class ChooseOptionScreen extends StatelessWidget {
         ),
         const SizedBox(height: 20),
         ChooseButton(
+          fontSize: 18,
           text: 'Driver',
           onPressed: () {
             Navigator.push(
@@ -29,7 +30,7 @@ class ChooseOptionScreen extends StatelessWidget {
           },
         ),
         const SizedBox(height: 25),
-        ChooseButton(text: 'Passenger'),
+        ChooseButton(text: 'Passenger', fontSize: 18),
       ],
     );
   }
