@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tripi_x/styles/colors.dart';
+import 'package:tripi_x/views/driver_view/views/forget_pass_view.dart';
+import 'package:tripi_x/views/driver_view/views/signup_view.dart';
 import 'package:tripi_x/widgets/custom_button.dart';
 import 'package:tripi_x/widgets/sign_banner.dart';
 import 'package:tripi_x/widgets/text_field.dart';
@@ -19,7 +21,7 @@ class SigninView extends StatelessWidget {
             hintText: "Enter Email Address",
             labelText: "Email Address",
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 18),
           CustomTextField(
             hintText: "Enter password",
             labelText: "Password",
@@ -31,7 +33,16 @@ class SigninView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return ForgetPassView();
+                        },
+                      ),
+                    );
+                  },
                   child: Text(
                     "Forget Password?",
                     style: TextStyle(
@@ -44,7 +55,7 @@ class SigninView extends StatelessWidget {
             ),
           ),
           SizedBox(height: 15),
-          ChooseButton(text: "Sign in"),
+          ChooseButton(text: "Sign in", fontSize: 16),
           SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -150,7 +161,16 @@ class SigninView extends StatelessWidget {
                 style: TextStyle(fontSize: 16, color: AppColors.grey600),
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return SignupView();
+                      },
+                    ),
+                  );
+                },
                 child: Text(
                   "Sign Up",
                   style: TextStyle(

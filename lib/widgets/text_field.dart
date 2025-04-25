@@ -23,7 +23,7 @@ class CustomTextField extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
       decoration: BoxDecoration(
         color: AppColors.grey100,
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(23),
         boxShadow: [
           BoxShadow(
             color: AppColors.grey500,
@@ -45,7 +45,7 @@ class CustomTextField extends StatelessWidget {
           hintText: hintText,
           labelText: labelText,
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(22),
             borderSide: BorderSide.none,
           ),
         ),
